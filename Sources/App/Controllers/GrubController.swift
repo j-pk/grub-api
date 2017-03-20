@@ -109,7 +109,7 @@ final class GrubController {
         #if os(Linux)
             let time = UInt32(NSDate().timeIntervalSinceReferenceDate)
             srand(time)
-            randomIndex = Int(rand() % places.count)
+            randomIndex = Int(rand() % Int32(places.count))
         #else
             randomIndex = Int(arc4random_uniform(UInt32(places.count)))
         #endif

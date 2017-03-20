@@ -101,15 +101,15 @@ final class GrubController {
         return try drop.client.get(google_place_api_url + "details/json?",
                                query: ["placeid": place_id,
                                 "key": key])
-        Date().timeIntervalSince1970
     }
     
     func random(request: Request) throws -> ResponseRepresentable {
         let places = try Place.all()
         var randomIndex: Int = 0
         #if os(Linux)
-            srandom(UInt32(Date().timeIntervalSince1970))
-            randomIndex = Int(random() % places.count)
+            let time = UInt32(NSDate().timeIntervalSinceReferenceDate)
+            srand(time)
+            randomIndex = Int(rand() % places.count)
         #else
             randomIndex = Int(arc4random_uniform(UInt32(places.count)))
         #endif

@@ -5,6 +5,7 @@ import Auth
 let drop = Droplet()
 try drop.addProvider(VaporPostgreSQL.Provider.self)
 drop.preparations = [Place.self, Rating.self, User.self]
+drop.middleware.insert(CORSMiddleware(), at: 0)
 
 let loginController = LoginController()
 loginController.addRoutes(drop: drop)

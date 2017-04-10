@@ -5,6 +5,7 @@ Grub API was created to help with meal time decisions.
 API URL: https://grubapi.heroku.com/v1
 
 ###Register & Login
+
 Send a post request with a json that has a `username` and `password` to register a new user. `username` needs to be more than 3 characters long and `passwords` should be at least 6.   
 
 ```
@@ -29,7 +30,8 @@ Send a similar JSON to login in as well. Below is an example response.
 
 When making a request be sure to put `Authorization: Bearer access_token` in your header or your request will fail. Access tokens expire in `x` hours, be sure to reauthenticate when necessary. Passwords are hashed. Request errors should be self explanatory. 
 
-###Place			
+###Place		
+
 The `place` object contain useful information about an eating place like location, menus, and ratings.
 
 |     Attribue    |    Type   |                                            Description                                           |      Optional?     |
@@ -77,6 +79,7 @@ The `place` object contain useful information about an eating place like locatio
 
 ***
 ###Rating    
+
 The `rating` object contains information about the quality of a place's food and service.
 
 |  Attribue  |    Type   |                        Description                        | Optional? |

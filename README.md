@@ -2,7 +2,7 @@
 ----
 Grub API was created to help with meal time decisions. 
   
-API URL: https://grubapi.heroku.com/v1
+API URL: https://grubapi.herokuapp.com/v1
 
 ### Register & Login
 

@@ -177,7 +177,7 @@ Example `POST` request
 * [x] OAuth, Salt and Hash Password
 * [x] Add User relationship to Place
 * [ ] Add attributes to place; happy hour times, specials and distance from office (walkability)
-* [ ] iOS, Android, ~~Web~~ presence 
+* [ ] iOS, Android, ~~[Web](https://grubber-v1.herokuapp.com/)~~ presence 
 * [ ] I don't know.. any suggestions? 
 
 

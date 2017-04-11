@@ -10,8 +10,8 @@ Send a post request with a json that has a `username` and `password` to register
 
 ```
 {
-	"username": "ricky_bobby",
-	"password": "gofast"
+  "username": "ricky_bobby",
+  "password": "gofast"
 }
 ```
 

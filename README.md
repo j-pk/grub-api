@@ -97,14 +97,14 @@ The `rating` object contains information about the quality of a place's food and
 
 ```
 {
-	"comment": "Pretty good sushi. ",
-	"date_rated": "2017-03-12T15:33:46Z",
-	"food": 1,
-	"id": 5,
-	"place_id": 2,
-	"service": 3,
-	"user_id": 2,
-	"username": "five2"
+  "comment": "Pretty good sushi. ",
+  "date_rated": "2017-03-12T15:33:46Z", 
+  "food": 1,
+  "id": 5,
+  "place_id": 2,
+  "service": 3,
+  "user_id": 2,
+  "username": "five2"
 }
 ```
 
